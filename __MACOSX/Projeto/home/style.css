@@ -125,9 +125,10 @@ main h4 {
 
 /* PALESTRANTES */
 .palestrantes { 
-    text-align: center;
-	padding: 20px;
+    text-align: center;   
+    padding: 33px ;
     background: coral;
+
 }
 .palestrantes h3{
     text-transform: uppercase;
@@ -137,16 +138,15 @@ main h4 {
     color: white;
 }
 
-.palestrantes li{
+.card {
     display: inline-block;
-    text-align: center;
-    width: 17%;
-    vertical-align: top;
-    margin: 0 0.5%;
+    width: 20%;
     padding: 43px 34px;
+    margin: 4px 4px 15px;
     background: white;
     box-sizing: border-box;
     border-radius: 10px;
+    
 }
 
 img{
@@ -161,17 +161,20 @@ img{
     font-weight: bold;
 }
 
-@media (max-width: 990px){
-    .palestrantes li{
+@media (max-width: 1000px){
+    .card{
         display: inline-block;
         width: 33%;
         margin: 16px 0.5%;
         padding: 30px 20px;
     }
 }
-@media (max-width: 555px){
-    .palestrantes li{
+
+@media (max-width: 630px){
+    .card{
         display: inline-block;
         width: 60%;
+        margin: 16px 0.5%;
+        padding: 30px 20px;
     }
 }
