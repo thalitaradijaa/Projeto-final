@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+
 /* HEADER */
 .destaque{
     width: 100%;
@@ -87,6 +90,10 @@ nav a:hover{
     }
     
 }
+
+
+
+
 /* CONTEUDO */
 .conteudo {
     margin: 25px;
@@ -104,13 +111,18 @@ main h4 {
 
 .conteudo p {
     line-height: 27px;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+
+
+
+
 
 /* PALESTRANTES */
 .palestrantes { 
-    text-align: center;   
-    padding: 33px ;
+    text-align: center;  
+    padding: 70px 33px;
     background: coral;
 
 }
@@ -130,7 +142,6 @@ main h4 {
     background: white;
     box-sizing: border-box;
     border-radius: 10px;
-    
 }
 
 img{
@@ -145,7 +156,7 @@ img{
     font-weight: bold;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1007px){
     .card{
         display: inline-block;
         width: 33%;
@@ -161,4 +172,61 @@ img{
         margin: 16px 0.5%;
         padding: 30px 20px;
     }
+    .formulario .botao{
+        padding: 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px){
+    .card{
+        width: 85%;
+    }
+}
+
+@media (max-width: 880px){
+    
+    .formulario .botao{
+        padding: 16px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/* FORMULARIO */
+.formulario{
+    text-align: center;   
+    padding: 33px ;
+}
+.formulario h3{
+    text-transform: uppercase;
+    color: coral;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.input input, label{
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.input input{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 3px 1px #00000046;
+    border: solid 1px #ecd7d7;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(209, 113, 22);
+}
+
+#email{
+    margin-bottom: 60px;
 }
